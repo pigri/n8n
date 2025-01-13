@@ -1,0 +1,31 @@
+{
+  "name": "n8m",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --remote-only",
+    "dev": "dotenv -- turbo dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "dotenv-cli": "latest",
+    "prettier": "latest",
+    "turbo": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pigri/n8n.git"
+  },
+  "packageManager": "pnpm@9.12.3"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "supabase functions deploy n8n-ai-embed --project-ref $SUPABASE_PROJECT_REF --no-verify-jwt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pigri/n8n.git"
+  },
+  "private": true
+}
